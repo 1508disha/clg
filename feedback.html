@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registration Form</title>
+     <style>
+          body {
+               background-image: url(feed1.png);
+               background-repeat: no-repeat;
+               background-size: 110%;
+               
+          }
+
+          .nav {
+               color: rgb(197, 192, 191);
+               font-weight: bolder;
+               font-size: 30px;
+               font-family: Verdana;
+               padding: 20px;
+          }
+
+          .nav a {
+               color: rgb(7, 7, 7);
+               text-decoration: none;
+               padding: 12px 14px;
+               float: right;
+               text-transform: capitalize;
+          }
+
+          nav a:hover {
+               color: rgb(250, 248, 248);
+               transition: 0.5s;
+          }
+
+
+          .box {
+               color: #000;
+               font-weight: bolder;
+               box-sizing: border-box;
+               width: 500px;
+               padding: 20px;
+               background-color: #2e42c256;
+               position: relative;
+               left: 50%;
+               top: 60%;
+               transform: translate(-50%, -50%);
+               border-radius: 0px 0px;
+               margin-top: 40%;
+               border-radius: 30px;
+               box-shadow: 50px;
+          }
+
+          .box button {
+               background: rgb(0, 162, 255);
+               color: #fff;
+               border: none;
+               font-size: 20px;
+
+          }
+
+          .box button:hover {
+               background-color: transparent;
+               color: rgb(0, 140, 255);
+               border: 2px solid rgb(0, 132, 255);
+          }
+     </style>
+     <script src="feed.js"></script>     
+</head>
+
+<body>
+     <script src="jquery-3.6.0.min.js"></script>
+     <script>
+     $(document).ready(function(){
+       $("button").click(function(){
+         $("#p1").css("color", "blue").slideUp(2000).slideDown(2000);
+       });
+     });
+     </script>
+
+<p id="p1">Please enter your feedback..!!</p>
+
+<button>Click me</button>
+</body>
+     <div>
+     </div>
+
+
+
+     <div class="box" style="height:850px;">
+          <div style="height:35px;">
+               
+               <table>
+                    <form name="myform" action="#" onsubmit="formValidation(event);">
+                         <h1>FEEDBACK FORM</h1>
+
+                         <select name="facility" style="width: 125px; height: 40px;padding: 0 10px;" id="sel">
+                              <option value="-1">
+                                   Title
+                              </option>
+                              <option value="1">
+                                   Ms.
+                              </option>
+
+                              <option value="2">
+                                   Miss.
+                              </option>
+
+                              <option value="3">
+                                   Mrs.
+                              </option>
+
+                              <option value="4">
+                                   Mr.
+                              </option>
+                         </select>
+                         <tr>
+                              <td>
+                                   <label for="fname" style=" font-size:20px; margin-top: 40px;">First
+                                        Name</label><br><br>
+                                   <input type="text" name="fname" placeholder="Enter your first name"
+                                        style="width:80%; height:40px; border-radius: 15px 50px; border-color: rgba(255, 255, 255, 0.829); padding: 0 20px;" id="fname" />
+                              </td>
+                              <td>
+                                   <label for="last name" style="font-size:20px; margin-left:20px;">Last
+                                        Name</label><br><br>
+                                   <input type="text" name="lname1" id="lname" placeholder="Enter your last name"
+                                        style="width:80%; height:40px; border-radius: 15px 50px; margin-left:20px; border-color: rgba(255, 255, 255, 0.829); padding: 0 20px;" id="lname" />
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <br><label for="Email"
+                                        style="font-size: 20px; margin-left: 1px;">Email</label><br><br>
+                                   <input type="email" name="email" placeholder="Enter your email"
+                                        style="width:198%; height:40px; border-radius: 15px 50px; margin-left:1px; border-color: rgba(255, 255, 255, 0.829); padding: 0 20px;" />
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <h4>Type of feedback</h4>
+                                   <select name="facility" id="selval" style="width: 125px; height: 40px;padding: 0 10px;" id="tof">
+                                        <option value="-1">
+                                             Please select
+                                        </option>
+                                        <option value="1">
+                                             Enquiry
+                                        </option>
+
+                                        <option value="2">
+                                             Complaint
+                                        </option>
+
+                                        <option value="3">
+                                             Suggestion
+                                        </option>
+
+                                   </select>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <h4>Feedback on..</h4>
+                                   <select name="facility" id="selquery" style="width: 125px; height: 40px;padding: 0 10px;">
+                                        <option value="-1">
+                                             Please select
+                                        </option>
+                                        <option value="1">
+                                             Student
+                                        </option>
+
+                                        <option value="2">
+                                             Faculty
+                                        </option>
+
+                                        <option value="3">
+                                             College Management
+                                        </option>
+
+                                        <option value="4">
+                                             Others
+                                        </option>
+
+                                   </select>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <br><label for="Contact number" style="font-size: 20px; margin-left: 1px;">Contact
+                                        number</label><br><br>
+                                   <input type="tel" id="phone" name="Number" placeholder="Enter your number"
+                                        style="width:150%; height:40px; border-radius: 15px 50px; margin-left:1px; border-color: rgba(255, 255, 255, 0.829); padding: 0 20px;" id="phoneno"/>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <br><label for="Branch visited" style="font-size: 20px; margin-left: 1px;">Field
+                                        visited</label><br><br>
+                                   <input type="text" id="branch" name="Branch visited" placeholder="Name of Field"
+                                        style="width:198%; height:40px; border-radius: 15px 50px; margin-left:1px; border-color: rgba(255, 255, 255, 0.829); padding: 0 20px;" />
+
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                              <button>Submit</button>
+                         </td>
+                         </tr>
+                    </form>
+                    
+          </div>
+     </div>
+     </table>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer {
+            background-color: rgb(219, 221, 223);
+            width: 100vw;
+            height: 120vh;
+            margin: 0px;
+        }
+
+        #nav {
+            width: 100%;
+            background-color: rgb(24, 24, 80);
+            height: 90px;
+            color: white;
+        }
+
+        #logo {
+            height: 70px;
+            width: 226px;
+            padding-top: 10px;
+            padding-left: 65px;
+            float: left;
+        }
+
+        #txt {
+            color: white;
+            padding-left: 370px;
+            padding-top: 15px;
+
+        }
+
+        #img {
+            width: 100%;
+
+        }
+
+        #loginButton {
+            background-color: darkblue;
+            width: 200px;
+            height: 40px;
+            color: white;
+            border-radius: 0px 20px;
+            margin-top: 10px;
+        }
+
+        #grid {
+            width: 100%;
+        }
+
+        
+        #online {
+            width: 19%;
+            border-right: 2px dotted black;
+            float: left;
+            height: 150px;
+        }
+
+        #tax {
+            width: 19%;
+            border-right: 2px dotted black;
+            float: left;
+            height: 150px;
+        }
+
+        #others {
+            width: 19%;
+            border-right: 2px dotted black;
+            float: left;
+            height: 150px;
+        }
+
+        #do {
+            width: 19%;
+            text-align: justify;
+            float: left;
+            padding: 10px;
+            border-right: 2px dotted black;
+        }
+
+        #dont {
+            width: 19%;
+            text-align: justify;
+            float: left;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+
+        <div id="nav">
+            <img src="logo-1.jpg" alt="" id="logo">
+            <nav id="txt">
+                <pre style="font-size: 18px;">
+                    Phone Banking Contact No           <a href="feedback.html" style="color: white; text-decoration: none;font-size: 18px;">Feedback</a>   <a href="registration_form.html" style="color: white; text-decoration: none; font-size: 18px;">Registration</a>
+                    1800-4250-2121                     <a href="con2.html" style="color: white; text-decoration: none;font-size: 18px;">Contact Us</a>
+                </pre>
+
+            </nav>
+        </div>
+        
+        <div>
+            <center>
+                <button name="login" id="loginButton" onclick="loginbtn(event);"></a>LOGIN</button>
+            </center>
+        </div>
+        <div id="grid">
+            <div id="online">
+                <center>
+                    <h3>ONLINE PAYMENTS</h3>
+                </center>
+                <a href="#" style="color: ; margin-left: 20px; text-decoration: none;">LIC Premium
+                    Payments</a><br>
+                <a href="#" style="color: ; margin-left: 20px; text-decoration: none;">TNEB
+                    Payments</a><br>
+                <a href="#" style="color: ; margin-left: 20px; text-decoration: none;">Debit card</a>
+            </div>
+            <div id="tax">
+                <center>
+                    <h3>TAX PAYMENTS</h3>
+                </center>
+                <a href="#" style="color: ; margin-left: 20px; text-decoration: none;">Income Tax</a><br>
+                <a href="#" style="color: ; margin-left: 20px; text-decoration: none;">GST
+                    Payments</a><br>
+                <a href="#" style="color: ; margin-left: 20px; text-decoration: none;">Service Tax</a>
+            </div>
+            <div id="others">
+                <center>
+                    <h3>OTHERS</h3>
+                </center>
+                <a href="#" style="color:; margin-left: 20px; text-decoration: none;">Door step
+                    Banking</a><br>
+                <a href="#" style="color:; margin-left: 20px; text-decoration: none;">Know your
+                    CIF</a><br>
+                <a href="#" style="color:; margin-left: 20px; text-decoration: none;">Online Shares
+                    Trading</a>
+            </div>
+            <div id="do">
+                <center>
+                    <h3>DO'S</h3>
+                </center>
+                <p>
+                    Always Update your PC with latest anti-virus and spy ware software regularly
+                    Always ensure that the page displayed is an https://
+                </p>
+            </div>
+            <div id="dont">
+                <center>
+                    <h3>DON'T</h3>
+                </center>
+                <p>
+                    Never Respond to any emails/phone calls seeking your password.
+                    Never reveal your password/OTP/card details to anyone.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function loginbtn(event){
+            event.preventDefault;
+            window.location.href="h1.html";
+
+        }
+    </script>
+</body>
+
+</html>

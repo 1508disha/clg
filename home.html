@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url(home.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+       
+
+        .box {
+            color: white;
+            font-weight: bolder;
+            box-sizing: border-box;
+            width: 415px;
+            padding: 20px;
+            background-color: #16151575;
+            position: relative;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            border-radius: 0px 0px;
+            margin-top: 25%;
+        }
+
+        .box button {
+            width: 30%;
+            background: red;
+            border: none;
+
+        }
+
+        .box button:hover {
+            background-color: transparent;
+            color: red;
+            border: 2px solid red;
+        }
+    </style>
+    <script type="text/javascript" src="allletters.js"></script>
+</head>
+
+<body>
+
+    <div class="box" style="height:350px; border-radius: 10px; font-family: Arial, Helvetica, sans-serif;">
+        <div style="height:35px;">
+            <form name="myform" action="registration_form.html"  onsubmit=" return  formValidation(event);">
+            <h1 style="text-align: center; margin-top: 10px;">Login</h1>
+            <label for="fname" style="margin-left: 20px; font-size:20px; margin-top: 40px; color: white;">User Name</label><br><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your user name"  style="width:80%; height:40px; border-radius: 0 0px; margin-left: 15px; border-color: rgba(255, 255, 255, 0.829); padding: 0 20px;"><br><br>
+        <label for="last name"style="margin-left:20px;fontsize:20px;color:white;">Password</label><br><br>
+        <input type="password" id="pass" name="pass" placeholder="Enter your password" 
+style="width:80%; height:40px; border-radius: 0 0px; margin-left: 15px; border-color: rgba(255, 255, 255, 0.829); padding: 0 20px;"><br><br>
+        <center> <button type="submit" style="height:35px; width:100px; border-radius:20px;"> 
+	
+	<span style="fontsize:20px;" ><b>Login</b></span></button></center>
+            </form>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+<script>
+    function formCheck(e){
+      window.location="C:/Users/HP/Documents/aartithakkarwdt-2/Project/registration_form.html";
+    }
+</script>
+
+</html>

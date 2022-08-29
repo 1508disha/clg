@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+           
+            background-color: rgb(35, 80, 24);
+           
+        }
+
+        
+        .nav a{
+            color:rgb(7, 7, 7);
+            text-decoration: none;
+            padding: 12px 14px;
+            float: right;
+            text-transform: capitalize;
+            }
+
+        .nav a:hover{
+            color: rgb(250, 248, 248);
+            transition:0.5s; 
+         }   
+         #nav {
+            width: 100%;
+            background-color: rgb((244, 224,0));
+            height: 90px;
+            color: white;
+        }
+         #logo {
+            height: 70px;
+            width: 226px;
+            padding-top: 10px;
+            padding-left: 65px;
+            float: left;
+        }
+        #txt {
+            color: white;
+            padding-left: 350px;
+            padding-top: 10px;
+            font-size: 20px;
+        }
+        .box {
+            color: #000;
+            font-weight: bolder;
+            box-sizing: border-box;
+            width: 500px;
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            border-radius: 0px 0px;
+            margin-top: 25%;
+            border-radius: 10px;
+            box-shadow: 30px 25px 24px 6px rgba(255, 255, 255, 0.06);
+        }
+        #area{
+            width: 405px;
+            border: 2px solid black;
+
+        }
+        #user{
+            width: 300px;
+            margin-top: 15px;
+            border: 2px solid black;
+            height: 20px;
+
+        }
+        #password{
+            width: 300px;
+            margin-top: 15px;
+            border: 2px solid black;
+            height: 20px;
+
+        }
+        #confirm {
+            
+            width: 300px;
+            margin-top: 15px;
+            border: 2px solid black;
+            height: 20px;
+
+        }
+        .box button{
+        background: rgb(24, 24, 80);
+         color: #fff;
+         border: none;
+         font-size: 20px;
+        
+        }
+    .box button:hover{
+         background-color: transparent;
+        color: rgb(24, 24, 80);
+        border: 2px solid rgb(24, 24, 80) ;
+        }
+    </style>
+    <script src="registration.js"></script>
+</head>
+
+<body>
+    <div>
+        <div id="nav" style="background-color: rgb(134, 0, 244)">
+            <img src="reg.png" alt="" id="logo">
+            <nav id="txt">
+
+                <pre>
+                    Contact No       <a href="feedback.html" style="color: white; text-decoration: none; font-size: 20p">Feedback        <a href="con2.html" style="color: white; text-decoration: none;font-size: 18px;">Contact Us</a>
+                    1800-4250-2121
+                </pre>
+
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="box" style="height:580px;">
+        <div style="height:35px;">
+                <center>
+                    <h2 style="font-family:Helvetica;color:rgb(129, 120, 151);">Student Registration Form</h2>
+                </center>
+                <hr style="border:2px solid rgb(24, 24, 80);width:100%;">
+                <hr>
+                <form name="myform" action="#" id="myform" onsubmit="formValidation(event);">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Course Type : <select name="" id="selAccount" style="margin-top: 15px; border: 2px solid black; background-color: rgb(17, 17, 243); color: white;">
+                        
+                            <option value="">-- Select --</option>
+                            <option value="001">Msc-it</option>
+                            <option value="002">MCA</option>
+                            <option value="003">BBA</option>
+                          </select>
+                            
+                          <p id='msg'></p>
+                          
+                         
+                            <script>
+                            let selectText = (ele) => {
+                                let msg = document.getElementById('msg');
+                                msg.innerHTML = 'Selected Text: <b>' + ele.options[ele.selectedIndex].text + '</b> </br>' +
+                                    'Value of the Selected Text: <b>' + ele.value + '</b>';
+                            }
+                        </script>
+                     <center>
+                <table style="margin-top: 15px;">
+                    
+                    <tr>
+                        <td>Prefix <br> <input type="text" placeholder="Surname" style="width: 125px;"></td>
+                        <td>First Name <br> <input type="text" placeholder="First Name" style="width: 125px;" id="name"></td>
+                        <td>Last Name <br> <input type="text" placeholder="Last Name" style="width: 125px;""></td>
+                    </tr>
+                </table>
+                <table style="margin-top: 15px;">
+                    
+                    <tr">
+                        <td>Phone Number <br> <input type="tel" id="phone" placeholder="xxxxxxxxxx" style="width: 197px;"></td>
+                        <td>Date Of Birth <br> <input type="date" placeholder="dd-mm-yyyy" style="width: 197px;""></td>
+                    </tr>
+                </table>
+                <p>RESIDENTIAL &nbsp ADDRESS</p>
+                <textarea name="" id="area" cols="30" form="myform" rows="3" placeholder="Enter address"></textarea><br>
+                <table>
+                    <tr>
+                        <td>User Name</td>
+                        <td>: <input type="text" id="user" placeholder="User Name" ></td>
+                    </tr>
+                    <tr>
+               <td> Password </td>
+              <td> : <input type="text" id="password"  placeholder="Password"></td>
+            </tr>
+            <tr>
+               <td> Confirm Password</td>
+               <td> : <input type="text" id="confirm"  placeholder="Confirm Password"></td>
+            </tr>
+            </table>
+            
+            <button type="submit" value="submit" style="height:35px; width: 200px;margin-top:15px ; border-radius: 30px;">
+                <a href="con2.html" style="text-decoration: none; color: #fff; "> Register</button>
+                </form> 
+            </center>
+            
+        </div>
+    </div>
+    
+
+
+</body>
+
+</html>
